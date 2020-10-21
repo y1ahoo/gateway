@@ -48,23 +48,23 @@ spring:
     gateway:
       routes:
         - id: checkIn
-          uri: http://checkIn:8080
+          uri: http://skccuer21-checkIn:8080
           predicates:
             - Path=/checkIns/** 
         - id: point
-          uri: http://point:8080
+          uri: http://skccuer21-point:8080
           predicates:
             - Path=/deducts/**,/earns/**,/prohibits/**
         - id: pay
-          uri: http://pay:8080
+          uri: http://skccuer21-pay:8080
           predicates:
             - Path=/pays/** 
         - id: customercenter
-          uri: http://customercenter:8080
+          uri: http://skccuer21-customercenter:8080
           predicates:
             - Path= /mypages/**
         - id: penalty
-          uri: http://penalty:8080
+          uri: http://skccuer21-penalty:8080
           predicates:
             - Path=/penalties/** 
       globalcors:
